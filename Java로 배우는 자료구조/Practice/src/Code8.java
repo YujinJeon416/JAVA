@@ -24,3 +24,4 @@ public class Code8 {
         System.out.println("Result:"+ max + " " + sum);
     }
 }
+
