@@ -394,5 +394,105 @@ public interface TV{
 
 - Action을 상속받는 클래스가 해당 클래스에서만 사용되고 다른 클래스에서는 사용되지 않는 경우이다.
 
---------------------예외처리
+# Exception
 > https://programmers.co.kr/learn/courses/5/lessons/244
+
+```java
+    try{
+
+    }catch(){
+
+    }finally{
+
+    }
+```
+- finally블록은 생략가능하다.
+- Exception클래스들은 모두 Exception클래스를 상속받으므로, 예외클래스에 Exception을 두게 되면 어떤 오류가 발생하든지 간에 하나의 catch블록에서 모든 오류를 처리할 수 있다.
+
+# Throws
+> throws는 예외 발생 시, 예외를 호출한 쪽에서 처리하도록 던져준다.
+
+```java
+public class ExceptionExam{
+    public static void main(String[] args){
+        int i = 0;
+        int j = 0;
+        try{
+            int k = divide(i,j);
+            System.out.println(k);
+
+        }catch (ArithmeticException e){
+            System.out.println("0으로 나눌 수 없습니다.");
+        }
+    }
+
+    public static int divide(int i, int j) throws ArithmeticException{
+        int k = i/j;
+        return k;
+    }
+}
+```
+
+# Exception 발생시키기
+- `throws`  : 클래스 선언시 사용
+- `throw`   : 예외를 생성시켜줄 때
+    - `throw new IllegalArgumentException(msg);`
+
+```java
+    public class ExceptionExam3 {   
+        public static void main(String[] args) {
+            int i = 10;
+            int j = 0;
+            try{
+                int k = divide(i, j);
+                System.out.println(k);
+            }catch(IllegalArgumentException e){
+                System.out.println("0으로 나누면 안됩니다.");
+            }           
+        }
+
+        public static int divide(int i, int j) throws IllegalArgumentException{
+            if(j == 0){
+                throw new IllegalArgumentException("0으로 나눌 수 없어요.");
+            }
+            int k = i / j;
+            return k;
+        }   
+```
+
+# 사용자 정의 Exception
+
+1. `extends Exception`
+    - `Checked Exception`
+    - 컴파일 시 발생하는 예외
+    - Exception은 이미 예측가능한 예외를 작성할 때 사용
+2. `extends RuntimeException`
+    - `Unchecked Exception`
+    - 발생 할수도 안 할수도 있는 경우에 작성
+
+- 트랜잭션
+```
+상품발송() {
+    try {
+        포장();
+        영수증발행();
+        발송();
+    }catch(예외) {
+       모두취소();
+    }
+}
+
+포장() throws 예외 {
+   ...
+}
+
+영수증발행() throws 예외 {
+   ...
+}
+
+발송() throws 예외 {
+   ...
+}
+```
+- 트랜잭션은 이런식으로 throws를 하여 예외를 호출 부분까지 올려주어야 한다. 
+- 그리하여 all or nothing을 실행해야 한다.
