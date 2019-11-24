@@ -347,3 +347,191 @@
     }
 ```
 
+# 자바IO
+
+- 자바 IO는 크게 `byte단위`,`문자단위` 입출력클래스로 나뉜다.
+- 장식 클래스
+
+# Byte 단위 입출력
+> Byte단위 입출력 클래스는 클래스의 이름이 InputStream이나 OutputStream으로 끝난다.
+
+- 파일로 부터 1byte씩 읽어들여 파일에 1byte씩 저장하는 프로그램을 작성
+    - 파일로 부터 읽어오기 위한 객체 - FileInputStream
+    - 파일에 쓸수 있게 해주는 객체 - FileOutputStream .
+- read()메소드가
+    - byte를 리턴한다면 끝을 나타내는 값을 표현할 수가 없기 때문에, byte가 아닌 int를 리턴한다.
+    - 음수의 경우 맨 좌측 비트가 1이 된다. 읽어들일 것이 있다면 항상 양수를 리턴한다고볼 수 있다. .
+- FileInputStream과 FileOutputStream을 이용하여, 1바이트씩 읽어들여 1바이트씩 저장
+    - read()메소드가 리턴하는 타입은 정수인데, 정수 4바이트중 마지막 바이트에 읽어들인 1바이트를 저장한다.
+    - read()메소드는 더이상 읽어들일 것이 없을때 -1을 리턴한다.
+
+```java
+    public class ByteIOExam1 {
+        public static void main(String[] args){     
+            FileInputStream fis = null; 
+            FileOutputStream fos = null;        
+            try {
+                fis = new FileInputStream("src/javaIO/exam/ByteExam1.java");
+                fos = new FileOutputStream("byte.txt");
+
+                int readData = -1; 
+                while((readData = fis.read())!= -1){
+                    fos.write(readData);
+                }           
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }finally{
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+```
+- `int readData = fis.read()`
+- `int readDate = fis.read(buffer)`처럼 안에 버퍼 변수를 넣을수 있고, 이 경우 버퍼 단위로 읽어들인다.
+    - `void write(byte buf[], int index, int size)` 
+    - size에는 읽어들인 데이터 size가 저장된다.
+    - index는 읽어들일 위치
+
+- `Q&A`
+```
+1-1 fis.read()는 파일로부터 읽어들인 1byte를 리턴하는 건가요?
+아닙니다. 파일로 부터 읽어들인 문자 하나(크기는 4byte)를 리턴합니다.
+그러면 char형으로 리턴하면 되지, 왜 int형으로 리턴하는가에 의문이 남죠.
+그 이유는 자료형의 범위 때문인데요. char 자료형은 2byte로 (0 ~ 216 - 1) 의 범위를 가집니다.
+그러나 read()는 더 이상 읽을 문자가 없을 경우 -1을 리턴하기 때문에 실제로 필요한 범위는 (-1 ~ 216 - 1) 이죠.
+이 범위를 만족하는 가장 작은 자료형이 int형이므로 리턴값의 크기가 int형(4byte)이 된 것입니다.
+
+1-2 fis.read(buffer)는 인자인 buffer에 파일로부터 읽어들인 1byte를 대입하고, 읽어들인 횟수를 리턴하는 건가요?
+읽은 값을 buffer에 저장하는 것은 맞습니다.
+그러나 buffer의 크기가 512byte이기 때문에, buffer에 읽어들인 (최대)512byte를 저장하는 것 입니다.
+리턴값은 읽은 횟수가 아닌 읽은 값의 크기를 리턴합니다.
+예를 들어, 327byte인 파일이 있다고 한다면 buffer에는 327byte가 저장되고, readCount에는 읽은 값의 크기(byte 수)인 327을 리턴 받습니다.
+그리고 두번째 읽을 때 buffer에는 아무 값이 저장되지 않고, readCount에는 -1을 리턴 받고 종료 되겠죠.
+```
+# Byte 단위 입출력 심화
+
+```java
+    public class ByteIOExam1 {
+        public static void main(String[] args){     
+            //메소드가 시작된 시간을 구하기 위함
+            long startTime = System.currentTimeMillis();        
+            FileInputStream fis = null; 
+            FileOutputStream fos = null;        
+            try {
+                fis = new FileInputStream("src/javaIO/exam/ByteExam1.java");
+                fos = new FileOutputStream("byte.txt");
+
+                int readCount = -1; 
+                byte[] buffer = new byte[512];
+                while((readCount = fis.read(buffer))!= -1){
+                    fos.write(buffer,0,readCount);
+                }
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }finally{
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        //메소드가 끝났을때 시간을 구하기 위함. 
+        long endTime = System.currentTimeMillis();
+        //메소드를 수행하는데 걸린 시간을 구할 수 있음. 
+        System.out.println(endTime-startTime); 
+        }
+    }
+```
+- 파일로 부터 512byte씩 읽어들여 파일에 512byte씩 저장하는 프로그램을 작성
+    - `byte[] buffer = new byte[512];`
+    - 512byte만큼 읽어 들이기 위해 byte배열을 사용
+
+# 다양한 타입의 출력
+
+- `try-with-resources`
+    - close()메소드를 사용자가 호출하지 않더라도, Exception이 발생하지 않았다면 자동으로 close()가 되게 할 수 있는 방법
+    - try(리소스)를 넣어주어 문법을 작성한다.
+    - 
+    ```java
+        try (SomeResource resource = getResource()) {
+            use(resource);
+        } catch(...) {
+            ...
+        }
+    ```
+    - **추가로 비동기 순서 강제방법과 예외처리에 대해서 공부!**
+- `DataOutputStream`
+    - `new DataOutputStream(new FileOutputStream("data.txt"));`
+    - 다양한 타입의 데이터를 저장할 수 있는 클래스
+        - `wirteInt()` - 정수값으로 저장
+        - `wirteBoolean()` - boolean값으로 저장
+        - `writeDouble()` - double 값으로 저장
+    - 
+    ```java
+
+    import java.io.DataOutputStream;
+    import java.io.FileOutputStream;    
+    public class ByteExam3 {    
+        public static void main(String[] args) {
+            try(
+                    DataOutputStream out = new DataOutputStream(new FileOutputStream("data.txt"));
+            ){
+                out.writeInt(100);
+                out.writeBoolean(true);
+                out.writeDouble(50.5);
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+        }   
+    }
+    ```
+
+# 다양한 타입의 입력
+- data.dat로부터 값을 읽어들여 화면에 출력하는 클래스
+- `DataInputStream out = new DataInputStream(new FileInputStream("data.dat"));`
+- **파일에 저장된 순서대로 읽어 들여야한다.**
+
+```java
+import java.io.*;
+
+public class DataInputStreamExam{
+    public static int read3(){
+        int sum = 0;
+        //data.txt로부터 int값 3개를 읽어들여서 sum에 더하세요.
+        try(
+            DataInputStream in = new DataInputStream(new FileInputStream("data.txt"));
+        ){
+            int cnt = 3;
+            while (cnt>0){
+                sum += in.readInt();
+                cnt -= 1;
+            }
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        return sum;
+    }
+}
+```
+
+# Char 단위 입출력(Console)
