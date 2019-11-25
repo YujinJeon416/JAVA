@@ -16,6 +16,10 @@
 
 
 # TODO
+
+- [카카오 개발자 기술면접](https://brunch.co.kr/magazine/would-be-dev)
+- [카카오 개발자 코딩기초](https://brunch.co.kr/magazine/growingdev)
+
 - String StringBuffer StringBuilder
     - `StringBuffer StringBuilder`
 
