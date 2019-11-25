@@ -479,7 +479,12 @@
             ...
         }
     ```
+    - 기존 `try-catch-finally`에서 finally 부분에서 `close`를 담당해주어 `mem leak`을 방지해주었던 부분이, `try(resource1;resource2)`괄호 속에 들어가게 하여 자동으로 close하게 한다.
+    - try 괄호 `()`안에서, 예외가 발생할 경우 try 구문 안에서 예외처리가 된다. 그러나 예외는 동시에 2개를 나타낼 수 없으므로 2개 이상이 등장한다면, `Suppressed`형식으로 예외가 표기된다.
+    - try with resources를 사용하기 위해서는, `AutoCloseable`을 implements해야 한다.
+        - 대부분 resource들은 autocloseable을 implements한 것 같다.
     - **추가로 비동기 순서 강제방법과 예외처리에 대해서 공부!**
+    
 - `DataOutputStream`
     - `new DataOutputStream(new FileOutputStream("data.txt"));`
     - 다양한 타입의 데이터를 저장할 수 있는 클래스
@@ -825,3 +830,170 @@ public class CharIOExam{
 - Thread가 가지고 있는 join메소드를 호출하게 되면 해당 쓰레드가 종료될 때까지 대기하게 된다.
 
 # 쓰레드와 상태제어(join)
+> join()메소드는 쓰레드가 멈출때까지 기다리게 한다.
+
+- `sleep()` 하는 class
+```java
+    public class MyThread5 extends Thread{
+        public void run(){
+            for(int i = 0; i < 5; i++){
+                System.out.println("MyThread5 : "+ i);
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        } // run
+    }
+```
+
+- `join()` 하는 class
+```java
+    public class JoinExam { 
+        public static void main(String[] args) {
+            MyThread5 thread = new MyThread5();
+            // Thread 시작 
+            thread.start(); 
+            System.out.println("Thread가 종료될때까지 기다립니다.");
+            try {
+                // 해당 쓰레드가 멈출때까지 멈춤
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("Thread가 종료되었습니다."); 
+        }   
+    }
+```
+
+# 쓰레드와 상태제어
+> wait, notify
+
+- wait와 notify는 동기화된 블록안에서 사용해야 한다.
+- wait를 만나게 되면 해당 쓰레드는 해당 객체의 모니터링 락에 대한 권한을 가지고 있다면 모니터링 락의 권한을 놓고 대기한다.
+    - **자바 Thread와 운영체제 Thread 추가 학습**
+        - https://ssipflow.github.io/os/Thread/
+- **자바 모니터링 락과 락 체계 공부해보자**
+    - http://happinessoncode.com/2017/10/04/java-intrinsic-lock/
+    - https://parkcheolu.tistory.com/24
+
+- 
+```java
+    public class ThreadB extends Thread{
+       // 해당 쓰레드가 실행되면 자기 자신의 모니터링 락을 획득
+       // 5번 반복하면서 0.5초씩 쉬면서 total에 값을 누적
+       // 그후에 notify()메소드를 호출하여 wiat하고 있는 쓰레드를 깨움 
+        int total;
+        @Override
+        public void run(){
+            synchronized(this){
+                for(int i=0; i<5 ; i++){
+                    System.out.println(i + "를 더합니다.");
+                    total += i;
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                notify();
+            }
+        }
+    }
+```
+
+-
+```java
+    public class ThreadA {
+        public static void main(String[] args){
+            // 앞에서 만든 쓰레드 B를 만든 후 start 
+            // 해당 쓰레드가 실행되면, 해당 쓰레드는 run메소드 안에서 자신의 모니터링 락을 획득
+            ThreadB b = new ThreadB();
+            b.start();
+
+            // b에 대하여 동기화 블럭을 설정
+            // 만약 main쓰레드가 아래의 블록을 위의 Thread보다 먼저 실행되었다면 wait를 하게 되면서 모니터링 락을 놓고 대기       
+            synchronized(b){
+                try{
+                    // b.wait()메소드를 호출.
+                    // 메인쓰레드는 정지
+                    // ThreadB가 5번 값을 더한 후 notify를 호출하게 되면 wait에서 깨어남
+                    System.out.println("b가 완료될때까지 기다립니다.");
+                    b.wait();
+                }catch(InterruptedException e){
+                    e.printStackTrace();
+                }
+
+                //깨어난 후 결과를 출력
+                System.out.println("Total is: " + b.total);
+            }
+        }
+    }
+```
+
+- 실행결과
+```
+        b가 완료될때까지 기다립니다.
+        0를 더합니다.
+        1를 더합니다.
+        2를 더합니다.
+        3를 더합니다.
+        4를 더합니다.
+        Total is: 10
+```
+
+# 데몬 쓰레드
+
+```java
+    public class DaemonThread implements Runnable {...}
+
+    Thread th = new Thread(new DaemonThread());
+    // 데몬쓰레드로 설정
+    th.setDaemon(true);
+    // 쓰레드를 실행
+    th.start();
+```
+
+```java
+    // Runnable을 구현하는 DaemonThread클래스를 작성
+    public class DaemonThread implements Runnable {
+
+        // 무한루프안에서 0.5초씩 쉬면서 데몬쓰레드가 실행중입니다를 출력하도록 run()메소드를 작성
+        @Override
+        public void run() {
+            while (true) {
+                System.out.println("데몬 쓰레드가 실행중입니다.");
+
+                try {
+                    Thread.sleep(500);
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                    break; //Exception발생시 while 문 빠찌도록 
+                }
+            }
+        }
+
+        public static void main(String[] args) {
+            // Runnable을 구현하는 DaemonThread를 실행하기 위하여 Thread 생성
+            Thread th = new Thread(new DaemonThread());
+            // 데몬쓰레드로 설정
+            th.setDaemon(true);
+            // 쓰레드를 실행
+            th.start();
+
+            // 메인 쓰레드가 1초뒤에 종료되도록 설정. 
+            // 데몬쓰레드는 다른 쓰레드가 모두 종료되면 자동종료.
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }   
+            System.out.println("메인 쓰레드가 종료됩니다. ");    
+        }   
+    }
+```
+
+# 람다식
+> 람다식은 다른말로 익명 메소드라고도 함
