@@ -535,3 +535,293 @@ public class DataInputStreamExam{
 ```
 
 # Char 단위 입출력(Console)
+> char단위 입출력 클래스는 클래스 이름이 Reader나 Writer로 끝이 난다.
+
+- char단위 입출력 클래스를 이용해서 키보드로 부터 한줄 입력 받아서 콘솔에 출력
+    - System.in - 키보드를 의미 (InputStream )
+    - BufferedReader - 한줄씩 입력 받기위한 클래스
+    - BufferedReader 클래스의 생성자는 InputStream을 입력받는 생성자가 없다.
+    - System.in은 InputStream 타입이므로 BufferedReader의 생성자에 바로 들어갈 수 없으므로 InputStreamReader 클래스를 이용해야함.
+
+```java
+
+    import java.io.BufferedReader;
+    import java.io.FileWriter;
+    import java.io.IOException;
+    import java.io.InputStreamReader;
+    import java.io.PrintWriter; 
+    public class CharIOExam01 {
+        public static void main(String[] args) {
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            //키보드로 입력받은 문자열을 저장하기 위해 line변수를 선언               
+            String line = null;     
+            try {
+                line = br.readLine()
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            //콘솔에 출력 
+            System.out.println(line);
+        }
+    }
+```
+
+# Char 단위 입출력(File)
+
+
+- 파일에서 한 줄씩 입력 받아서 파일에 출력
+    - 파일에서 읽기위해서 FileReader 클래스 이용
+    - 한 줄 읽어 들이기 위해서 BufferedReader 클래스 이용
+        - BufferedReader 클래스가 가지고 있는 readLine() 메소드가 한줄씩 읽게 해준다.
+        - readLine()메소드는 읽어낼 때 더 이상 읽어 들일 내용이 없을 때 null을 리턴한다.
+    - 파일에 쓰게하기 위해서 FileWriter 클래스 이용
+    - 편리하게 출력하기 위해서 PrintWriter 클래스 이용
+
+```java
+
+    import java.io.BufferedReader;
+    import java.io.FileReader;
+    import java.io.FileWriter;
+    import java.io.IOException;
+    import java.io.PrintWriter; 
+    public class CharIOExam02 {
+        public static void main(String[] args) {
+            BufferedReader br;
+            PrintWriter pw;
+            try{        
+                br = new BufferedReader(new FileReader("src/javaIO/exam/CharIOExam02.java"));
+                pw = new PrintWriter(new FileWriter("test.txt"));
+                String line = null;
+                while((line = br.readLine())!= null){
+                    pw.println(line);
+                }
+            }catch(Exception e){
+                e.printStackTrace();
+            }finally {
+                pw.close();
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+```
+
+- 연습문제 ( 파일에 string 한 문장 입력하기 )
+```java
+import java.io.*;
+public class CharIOExam{
+    public static void main(String[]args){
+        try(PrintWriter pw = new PrintWriter(new FileWriter("data.txt"))){
+            String line = "안녕하세요. PrintWriter입니다.";
+            pw.println(line);
+            }catch(Exception e){
+                e.printStackTrace();
+        }
+    }
+}
+```
+
+# 어노테이션
+> 어노테이션을 클래스나 메타코드에 붙인 후, 클래스가 컴파일되거나 실행될 때 어노테이션의 유무나 어노테이션에 설정된 값을 통하여 클래스가 좀 더 다르게 실행되게 할 수 있습니다.이런 이유로 어노테이션을 일정의 설정파일처럼 설명하는 경우도 있습니다.
+
+- [링크](https://programmers.co.kr/learn/courses/9/lessons/269)
+
+# 쓰레드 만들기 ( `extend Thread` )
+
+- 자바에서 Thread를 만드는 방법 ( 2 )
+    - Thread 클래스를 상속받는 방법
+    - Runnable인터페이스를 구현하는 방법
+
+# 1. Thread 클래스를 상속받는 방법
+
+- Thread를 상속 받아서 쓰레드를 생성하는 방법
+    - java.lang.Thread클래스를 상속받는다. 
+    - Thread가 가지고 있는 run()메소드를 오버라이딩한다.
+    - 10번 반복하면서 str을 찍는다.
+```java
+    public class MyThread1 extends Thread {
+        String str;
+        public MyThread1(String str){
+            this.str = str;
+        }
+
+        public void run(){
+            for(int i = 0; i < 10; i ++){
+                System.out.print(str);
+                try {
+                    Thread.sleep((int)(Math.random() * 1000));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            } 
+        } 
+    }
+```
+
+- Thread 클래스를 상속받은 MyThread1을 사용하는 클래스
+    - Thread를 상속 받았으므로 MyThread1은 Thread 이다.
+    - 쓰레드를 생성하고, Thread 클래스가 가지고 있는 start() 메소드를 호출 한다.
+
+```java
+    public class ThreadExam1 {
+        public static void main(String[] args) {
+            // MyThread인스턴스를 2개 만듭니다. 
+            MyThread1 t1 = new MyThread1("*");
+            MyThread1 t2 = new MyThread1("-");
+
+            t1.start();
+            t2.start();
+            System.out.print("!!!!!");  
+        }   
+    }
+```
+
+# 2. Runnable인터페이스를 구현하는 방법 
+- Runnable인터페이스를 구현해서 쓰레드를 만드는 방법
+    - Runable 인터페이스가 가지고 있는 run()메소드를 구현한다.
+```java
+    public class MyThread2 implements Runnable {
+        String str;
+        public MyThread2(String str){
+            this.str = str;
+        }
+
+        public void run(){
+            for(int i = 0; i < 10; i ++){
+                System.out.print(str);
+                try {
+                    Thread.sleep((int)(Math.random() * 1000));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            } 
+        } 
+    }
+```
+- Runable 인터페이스를 구현한 MyThread2 사용하는 방법
+    - MyThread2는 Thread를 상속받지 않았기 때문에 Thread가 아니다.
+    - Thread를 생성하고, 해당 생성자에 MyThread2를 넣어서 Thread를 생성한다.
+    - Thread 클래스가 가진 start()메소드를 호출한다.
+
+```java
+    public class ThreadExam2 {  
+        public static void main(String[] args) {
+            MyThread2 r1 = new MyThread2("*");
+            MyThread2 r2 = new MyThread2("-");
+
+            Thread t1 = new Thread(r1);
+            Thread t2 = new Thread(r2);
+
+            t1.start();
+            t2.start();
+            System.out.print("!!!!!");  
+        }   
+    }
+```
+
+# 쓰레드와 공유객체
+> 하나의 객체를 여러개의 Thread가 사용한다는 것을 의미
+
+- Critical Section ( Music 함수를 가지고 있는 class )
+```java
+    public class MusicBox { 
+        //신나는 음악!!! 이란 메시지가 1초이하로 쉬면서 10번 반복출력
+        public void playMusicA(){
+            for(int i = 0; i < 10; i ++){
+                System.out.println("신나는 음악!!!");
+                try {
+                    Thread.sleep((int)(Math.random() * 1000));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            } // for        
+        } //playMusicA
+
+        //슬픈 음악!!!이란 메시지가 1초이하로 쉬면서 10번 반복출력
+        public void playMusicB(){
+            for(int i = 0; i < 10; i ++){
+                System.out.println("슬픈 음악!!!");
+                try {
+                    Thread.sleep((int)(Math.random() * 1000));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            } // for        
+        } //playMusicB
+        //카페 음악!!! 이란 메시지가 1초이하로 쉬면서 10번 반복출력
+        public void playMusicC(){
+            for(int i = 0; i < 10; i ++){
+                System.out.println("카페 음악!!!");
+                try {
+                    Thread.sleep((int)(Math.random() * 1000));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            } // for        
+        } //playMusicC  
+    }
+```
+
+- MusicBox를 공유하는 User Thread (3개 생성 in 예제)
+```java
+    public class MusicPlayer extends Thread{
+        int type;
+        MusicBox musicBox;  
+        // 생성자로 부터 musicBox와 정수를 하나 받아들여서 필드를 초기화
+        public MusicPlayer(int type, MusicBox musicBox){
+            this.type = type;
+            this.musicBox = musicBox;
+        }       
+        // type이 무엇이냐에 따라서 musicBox가 가지고 있는 메소드가 다르게 호출
+        public void run(){
+            switch(type){
+                case 1 : musicBox.playMusicA(); break;
+                case 2 : musicBox.playMusicB(); break;
+                case 3 : musicBox.playMusicC(); break;
+            }
+        }       
+    }
+```
+- MusicBox를 테스트하는 main 코드
+```java
+    public class MusicBoxExam1 {
+
+        public static void main(String[] args) {
+            // MusicBox 인스턴스
+            MusicBox box = new MusicBox();
+
+            MusicPlayer kim = new MusicPlayer(1, box);
+            MusicPlayer lee = new MusicPlayer(2, box);
+            MusicPlayer kang = new MusicPlayer(3, box);
+
+            // MusicPlayer쓰레드를 실행합니다. 
+            kim.start();
+            lee.start();
+            kang.start();           
+        }   
+    }
+```
+
+- 전체적으로 User 3명(Thread)가 동시에 하나의 `MusicBox` 객체를 공유하기 때문에, Race condition이 발생할 수 밖에 없다.
+
+# 동기화 메소드와 동기화 블록
+> `Synchronized`
+
+- [프로그래머스 링크](https://programmers.co.kr/learn/courses/9/lessons/274)
+
+# Thread 상태제어
+> New Thread, Blocked, Dead, Runnable, Running
+
+- 쓰레드는 실행가능상태인 Runnable과 실행상태인 Running상태로 나뉜다.
+- 실행되는 쓰레드 안에서 Thread.sleep()이나 Object가 가지고 있는 wait()메소드가 호출이 되면 쓰레드는 블록상태가 된다.
+- Thread.sleep()은 특정시간이 지나면 자신 스스로 블록상태에서 빠져나와 Runnable이나 Running상태가 된다.
+- Object가 가지고 있는 wait()메소드는 다른 쓰레드가 notify()나 notifyAll()메소드를 호출하기 전에는 블록상태에서 해제되지 않는다.
+- wait()메소드는 호출이 되면 모니터링 락을 놓게 된다. 그래서 대기중인 다른 메소드가 실행한다.
+- 쓰레드의 run메소드가 종료되면, 쓰레드는 종료된다. 즉 Dead상태가 된다.
+- Thread의 yield메소드가 호출되면 해당 쓰레드는 다른 쓰레드에게 자원을 양보하게 된다.
+- Thread가 가지고 있는 join메소드를 호출하게 되면 해당 쓰레드가 종료될 때까지 대기하게 된다.
+
+# 쓰레드와 상태제어(join)

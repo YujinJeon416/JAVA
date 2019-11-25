@@ -8,7 +8,7 @@ public class Code8 {
         System.out.print("Enter int:");
 
         int n = kb.nextInt();
-        int[] data = new int[n];
+          int[] data = new int[n];
 
         for (int i = 0; i < data.length; i++)
             data[i] = kb.nextInt();
