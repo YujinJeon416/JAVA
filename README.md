@@ -20,10 +20,12 @@
 - [카카오 개발자 기술면접](https://brunch.co.kr/magazine/would-be-dev)
 - [카카오 개발자 코딩기초](https://brunch.co.kr/magazine/growingdev)
 
+- HashMap vs HashSet Tree?
+- JVM 동작과정
 - String StringBuffer StringBuilder
     - `StringBuffer StringBuilder`
 
-- HashMap vs HashSet Tree?
+
 - JDK 동작과정, JVM
 - GC 커스터마이징
 - Collection 프레임워크 큰 tree 공부
