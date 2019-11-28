@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2203c13-309f-4bcf-9c40-da560d7484de" name="Default Changelist" comment="" />
+    <list default="true" id="b2203c13-309f-4bcf-9c40-da560d7484de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Apache_Ant.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,7 +115,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -170,16 +173,18 @@
       <updated>1574658390456</updated>
       <workItem from="1574658395430" duration="1173000" />
       <workItem from="1574866002983" duration="91000" />
+      <workItem from="1574931140448" duration="603000" />
+      <workItem from="1574943396955" duration="368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1264000" />
+    <option name="totallyTimeSpent" value="2235000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="2493" height="1415" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19598196" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2012229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
