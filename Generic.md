@@ -69,3 +69,49 @@ class Person<T extends Info>{
     public T info;  // Info의 child type만 T가 가능하다
 }
 ```
+
+5. 메소드에 적용
+```java
+public <U> void printInfo(U info){
+    ...
+}
+```
+
+
+# Generic 연습문제
+> https://www.hackerrank.com/challenges/java-generics/problem
+
+```java
+class Printer{
+    //Write your code here
+    //printArray(T array)를 하여, 컴파일 에러가 떴었다.
+    public <T> void printArray(T[] array){
+        for (T element: array){
+            System.out.println(element);
+        }
+    }
+}
+
+public class Solution {
+
+
+    public static void main( String args[] ) {
+        Printer myPrinter = new Printer();
+        Integer[] intArray = { 1, 2, 3 };
+        String[] stringArray = {"Hello", "World"};
+        myPrinter.printArray(intArray);
+        myPrinter.printArray(stringArray);
+        int count = 0;
+
+        for (Method method : Printer.class.getDeclaredMethods()) {
+            String name = method.getName();
+
+            if(name.equals("printArray"))
+                count++;
+        }
+
+        if(count > 1)System.out.println("Method overloading is not allowed!");
+      
+    }
+}
+```
