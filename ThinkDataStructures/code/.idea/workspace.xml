@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5031d4f4-3aeb-4c3d-bf8f-11300ec12cd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/minkj1992/thinkdast/ListClientExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/minkj1992/thinkdast/ListClientExampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/minkj1992/thinkdast/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/minkj1992/thinkdast/MyInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/minkj1992/thinkdast/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Apache_Ant.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../programmers/MultiThreadRaceCondition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../programmers/MultiThreadRaceCondition/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xml.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../빌드시스템.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/minkj1992/thinkdast/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/minkj1992/thinkdast/MyArrayList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,38 +18,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/minkj1992/thinkdast/SelectionSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/minkj1992/thinkdast/MyArrayList.java">
+        <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+            <state relative-caret-position="411">
+              <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#422#452#0" expanded="true" />
-                <element signature="e#925#934#0" expanded="true" />
-                <element signature="e#2057#2058#0" expanded="true" />
-                <element signature="e#2114#2115#0" expanded="true" />
-                <element signature="e#2371#2372#0" expanded="true" />
-                <element signature="e#2412#2413#0" expanded="true" />
-                <element signature="e#3374#3375#0" expanded="true" />
-                <element signature="e#3406#3407#0" expanded="true" />
-                <element signature="e#4985#4986#0" expanded="true" />
-                <element signature="e#5042#5043#0" expanded="true" />
-                <element signature="e#5195#5196#0" expanded="true" />
-                <element signature="e#5222#5223#0" expanded="true" />
-                <element signature="e#5581#5582#0" expanded="true" />
-                <element signature="e#5630#5631#0" expanded="true" />
-                <element signature="e#5685#5686#0" expanded="true" />
-                <element signature="e#5742#5743#0" expanded="true" />
+                <element signature="e#0#1271#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
+                <element signature="e#1514#1515#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,6 +48,9 @@
       <find>Integer(</find>
       <find>get</find>
       <find>val</find>
+      <find>remove</find>
+      <find>removeAll</find>
+      <find>add</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,11 +64,12 @@
         <option value="$PROJECT_DIR$/src/com/minkj1992/thinkdast/ListClientExampleTest.java" />
         <option value="$PROJECT_DIR$/src/com/minkj1992/thinkdast/SelectionSort.java" />
         <option value="$PROJECT_DIR$/src/com/minkj1992/thinkdast/MyArrayList.java" />
+        <option value="$PROJECT_DIR$/src/MyLinkedList.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
+    <option name="x" value="993" />
     <option name="y" value="25" />
     <option name="width" value="927" />
     <option name="height" value="1055" />
@@ -109,8 +82,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -189,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SelectionSort">
+  <component name="RunManager" selected="Application.MyLinkedList">
     <configuration name="ListClientExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.minkj1992.thinkdast.ListClientExample" />
       <module name="code" />
@@ -199,6 +172,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyLinkedList" />
+      <module name="code" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -238,6 +218,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyLinkedList" />
         <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Arquillian JUnit.ListClientExampleTest" />
         <item itemvalue="Application.ListClientExample" />
@@ -255,12 +236,13 @@
       <option name="presentableId" value="Default" />
       <updated>1574943765172</updated>
       <workItem from="1574943768792" duration="5454000" />
-      <workItem from="1574949322253" duration="894000" />
+      <workItem from="1574949322253" duration="1260000" />
+      <workItem from="1575098691356" duration="5845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6348000" />
+    <option name="totallyTimeSpent" value="12559000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,10 +254,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="993" y="25" width="927" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19622013" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4100802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -284,7 +266,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49972206" visible="true" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.84192437" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -293,7 +275,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4991662" weight="0.32967034" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49805447" weight="0.32967034" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50027794" side_tool="true" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.1580756" side_tool="true" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49805447" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -409,35 +391,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/minkj1992/thinkdast/SelectionSort.java">
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/ArrayList.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="208">
+          <caret line="325" column="45" lean-forward="true" selection-start-line="325" selection-end-line="326" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/minkj1992/thinkdast/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/minkj1992/thinkdast/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        <state relative-caret-position="118">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#422#452#0" expanded="true" />
-            <element signature="e#925#934#0" expanded="true" />
-            <element signature="e#2057#2058#0" expanded="true" />
-            <element signature="e#2114#2115#0" expanded="true" />
-            <element signature="e#2371#2372#0" expanded="true" />
-            <element signature="e#2412#2413#0" expanded="true" />
-            <element signature="e#3374#3375#0" expanded="true" />
-            <element signature="e#3406#3407#0" expanded="true" />
-            <element signature="e#4985#4986#0" expanded="true" />
-            <element signature="e#5042#5043#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-            <element signature="e#5222#5223#0" expanded="true" />
-            <element signature="e#5581#5582#0" expanded="true" />
-            <element signature="e#5630#5631#0" expanded="true" />
-            <element signature="e#5685#5686#0" expanded="true" />
-            <element signature="e#5742#5743#0" expanded="true" />
+            <element signature="e#0#1271#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
           </folding>
         </state>
       </provider>
