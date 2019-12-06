@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5031d4f4-3aeb-4c3d-bf8f-11300ec12cd6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../이것이자바다/ch03.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../이것이자바다/ch03.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+            <state relative-caret-position="295">
+              <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
               <folding>
                 <element signature="e#0#2117#0" expanded="true" />
               </folding>
@@ -235,12 +234,12 @@
       <workItem from="1574943768792" duration="5454000" />
       <workItem from="1574949322253" duration="1260000" />
       <workItem from="1575098691356" duration="7909000" />
-      <workItem from="1575601776085" duration="208000" />
+      <workItem from="1575601776085" duration="848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14831000" />
+    <option name="totallyTimeSpent" value="15471000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -264,7 +263,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.84213454" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.84157866" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -273,7 +272,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4991662" weight="0.32967034" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49805447" weight="0.32967034" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.15786548" side_tool="true" visible="true" weight="0.33186814" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.15842135" side_tool="true" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49805447" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -408,8 +407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+        <state relative-caret-position="295">
+          <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
           <folding>
             <element signature="e#0#2117#0" expanded="true" />
           </folding>
