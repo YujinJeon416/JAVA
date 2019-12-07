@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5031d4f4-3aeb-4c3d-bf8f-11300ec12cd6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cat.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,16 +17,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
+            <state relative-caret-position="50">
               <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Animal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" lean-forward="true" selection-end-line="12" />
               <folding>
-                <element signature="e#0#2117#0" expanded="true" />
+                <element signature="e#74#75#0" expanded="true" />
+                <element signature="e#105#106#0" expanded="true" />
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#159#160#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cat.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -61,6 +79,8 @@
         <option value="$PROJECT_DIR$/src/com/minkj1992/thinkdast/SelectionSort.java" />
         <option value="$PROJECT_DIR$/src/com/minkj1992/thinkdast/MyArrayList.java" />
         <option value="$PROJECT_DIR$/src/MyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/Animal.java" />
+        <option value="$PROJECT_DIR$/src/Cat.java" />
       </list>
     </option>
   </component>
@@ -78,45 +98,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane" />
       <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="code" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="code" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="code" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="code" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="minkj1992" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="code" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="code" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="minkj1992" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="thinkdast" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,7 +142,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyLinkedList">
+  <component name="RunManager" selected="Application.Cat">
+    <configuration name="Cat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cat" />
+      <module name="code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ListClientExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.minkj1992.thinkdast.ListClientExample" />
       <module name="code" />
@@ -214,6 +205,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Cat" />
         <item itemvalue="Application.MyLinkedList" />
         <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Arquillian JUnit.ListClientExampleTest" />
@@ -235,11 +227,12 @@
       <workItem from="1574949322253" duration="1260000" />
       <workItem from="1575098691356" duration="7909000" />
       <workItem from="1575601776085" duration="1454000" />
+      <workItem from="1575698118900" duration="2332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16077000" />
+    <option name="totallyTimeSpent" value="18409000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,8 +245,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.4100802" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.40967205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -262,7 +256,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.84157866" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8410228" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -271,7 +265,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4991662" weight="0.32967034" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49805447" weight="0.32967034" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.15842135" side_tool="true" visible="true" weight="0.33186814" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.15897721" side_tool="true" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49805447" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -406,10 +400,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
+        <state relative-caret-position="50">
           <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cat.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" lean-forward="true" selection-end-line="12" />
           <folding>
-            <element signature="e#0#2117#0" expanded="true" />
+            <element signature="e#74#75#0" expanded="true" />
+            <element signature="e#105#106#0" expanded="true" />
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
           </folding>
         </state>
       </provider>
