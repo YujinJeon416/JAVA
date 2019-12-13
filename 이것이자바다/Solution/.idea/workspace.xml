@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9af5d967-2fee-4230-9097-bf94df8c6225" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ch11/hashCode/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch11/hashCode/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch11/hashCode/KeyExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch11/hashCode/KeyExample.java" afterDir="false" />
-    </list>
+    <list default="true" id="9af5d967-2fee-4230-9097-bf94df8c6225" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch11/hashCode/Key.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="695">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#190#191#0" expanded="true" />
                 <element signature="e#226#227#0" expanded="true" />
@@ -197,16 +194,15 @@
       <workItem from="1575887938933" duration="4022000" />
       <workItem from="1575894887247" duration="634000" />
       <workItem from="1575895754874" duration="600000" />
-      <workItem from="1576144032471" duration="1525000" />
+      <workItem from="1576144032471" duration="2650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6889000" />
+    <option name="totallyTimeSpent" value="8014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2634797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -217,7 +213,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -285,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch11/hashCode/Key.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="695">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#190#191#0" expanded="true" />
             <element signature="e#226#227#0" expanded="true" />
