@@ -1,0 +1,141 @@
+# ch02
+> ArrayList
+
+## `constructor()`
+- size: 원소의 갯수 추적
+- array: 실제 원소 갯수
+
+```java
+public class MyArrayList<T> implements List<T> {
+    int size;                    // keeps track of the number of elements
+    private T[] array;           // stores the elements
+
+    public MyArrayList() {
+        array = (T[]) new Object[10];
+        size = 0;
+    }
+```
+
+## `public boolean add(T element)`
+1. size검사
+2. 끝단 원소 대입
+3. return boolean
+
+```java
+    public boolean add(T element) {
+        if (size >= array.length) {
+            T[] bigger = (T[]) new Object[array.length * 2];
+            System.arraycopy(array,0,bigger,0,array.length);
+            array = bigger;
+        }
+        array[size] = element;
+        size++;
+        return true;
+    }
+```
+- **add가 항상 return true; 이지만 boolean인 이유**
+    - `Returns: true (as specified by Collection.add(E))`
+    - Collection 클래스의 add가 boolean 타입으로 설정해두어
+
+## `public T get(int index)`
+1. range check
+2. return array[index]
+
+```java
+    public T get(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+        return array[index];
+    }
+```
+
+## `public T set(int index, T element)`
+1. index 검사
+    - 실패시 exception throw
+2. 해당 index에 set
+3. 이전 값 return
+```java
+    public T set(int index, T element) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+        T prevVar = array[index];
+        array[index] = element;
+        return prevVar;
+    }
+```
+## `private boolean equals(Object target, Object element)`
+1. target이 null인 경우
+    - `return element == null;`
+2. target이 null아닌 경우
+    - `return target == element;`
+
+```java
+    private boolean equals(Object target, Object element) {
+        if (target == null) {
+            return element == null;
+        } else {
+            return target.equals(element);
+        }
+    }
+```
+
+- null값은 `equals`함수에서 null을 만날경우와 not null을 만날경우 같을까?
+
+
+## `public int indexOf(Object target)`
+> 위의 equals를 활용하여 구현
+1. 0..size for loop
+2. equals true의 경우 return index
+    - else return -1;
+
+```java
+    public int indexOf(Object target) {
+        for (int i = 0; i<size; i++) {
+            if (equals(target, array[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
+```
+
+## `public T remove(int index)`
+1. range check
+2. return 해줄 값 저장
+3. `arraycopy()`에 들어갈 length 구하기
+4. --size
+5. array[끝 부분]=null
+    - 이를 통하여 ArrayList의 `array`의 size가 증가할 수는 있지만, 감소하지는 않는다. (null 값으로 자리를 차지함)
+
+```java
+    public T remove(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        T removedVar = array[index];
+        int length = size - (index + 1);
+        if (length > 0) {
+            System.arraycopy(array, index + 1, array, index, length);
+        }
+
+        array[--size] = null;
+        return removedVar;
+    }
+```
+
+
+- `System.arraycopy()`
+```java
+/*
+ **파라미터
+src - 전송원배열
+srcPos - 소스 배열의 개시 위치
+dest - 전송처 배열
+destPos - 전송처 데이터내의 게시 위치 
+length - 카피되는 배열 요소의 수
+*/
+arraycopy(Object src, int srcPos, object dest, int destPos, length)
+```
