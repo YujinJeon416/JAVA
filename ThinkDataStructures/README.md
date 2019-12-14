@@ -3,4 +3,5 @@
 
 - [github 저장소](https://github.com/yudong80/ThinkDataStructures)
 
+- [정리한 자료](./실습자료/)
 

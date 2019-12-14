@@ -2,12 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7af5d49f-a5c2-40e3-91a7-b27378d76444" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Exercises/MyArrayList/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Exercises/MyArrayList/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Exercises/MyArrayList/src/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Exercises/MyArrayList/src/MyArrayListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/MyArrayList.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/out/production/MyArrayList/MyArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/out/production/MyArrayList/MyArrayListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/out/test/MyArrayList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/out/test/MyArrayList/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/out/test/MyArrayList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/out/test/MyArrayList/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/out/test/MyArrayList/MyArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/out/test/MyArrayList/MyArrayList.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/out/test/MyArrayList/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/src/MyArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Exercises/MyArrayList/src/MyArrayListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../[0장]Apache_Ant.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../[0장]xml.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../[0장]빌드시스템.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../[1장]인터페이스.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/out/production/code/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/out/production/code/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/out/production/code/com/minkj1992/thinkdast/ListClientExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/out/production/code/com/minkj1992/thinkdast/ListClientExampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/out/production/code/com/minkj1992/thinkdast/MyInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/out/production/code/com/minkj1992/thinkdast/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/src/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/src/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/src/MyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/src/com/minkj1992/thinkdast/ListClientExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/src/com/minkj1992/thinkdast/ListClientExampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/src/com/minkj1992/thinkdast/MyArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/src/com/minkj1992/thinkdast/MyInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../code/src/com/minkj1992/thinkdast/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/AdapterPattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/out/production/AdapterPattern/Adapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/out/production/AdapterPattern/AdapterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/out/production/AdapterPattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/out/production/AdapterPattern/Math.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/src/Adapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/src/AdapterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/AdapterPattern/src/Math.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/StrategyPattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/images/strategy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/DeligateExer/AObj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/DeligateExer/Ainterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/DeligateExer/AinterfaceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/DeligateExer/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/InterfaceExer/Ainterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/InterfaceExer/AinterfaceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/InterfaceExer/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/META-INF/StrategyPattern.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/StrategyPatternExer/Ax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/StrategyPatternExer/Bow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/StrategyPatternExer/GameChracter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/StrategyPatternExer/Knife.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/StrategyPatternExer/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/out/production/StrategyPattern/StrategyPatternExer/Weapon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/DeligateExer/AObj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/DeligateExer/Ainterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/DeligateExer/AinterfaceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/DeligateExer/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/InterfaceExer/Ainterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/InterfaceExer/AinterfaceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/InterfaceExer/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/StrategyPatternExer/Ax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/StrategyPatternExer/Bow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/StrategyPatternExer/GameChracter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/StrategyPatternExer/Knife.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/StrategyPatternExer/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../자바디자인패턴/StrategyPattern/src/StrategyPatternExer/Weapon.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -33,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -42,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/allendowney/thinkdast/MyArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="5425">
-              <caret line="231" lean-forward="true" selection-start-line="2" selection-end-line="231" />
+              <caret line="231" selection-start-line="2" selection-end-line="231" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +143,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/allendowney/thinkdast/MyArrayListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3600">
-              <caret line="18" lean-forward="true" selection-end-line="296" />
+            <state relative-caret-position="200">
+              <caret line="176" column="5" lean-forward="true" selection-start-line="176" selection-start-column="5" selection-end-line="176" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,14 +169,6 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/allendowney/thinkdast/ListClientExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/allendowney/thinkdast/MyArrayListTest.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/../../../Exercises/MyArrayList/MyArrayList.iml" />
       </list>
     </option>
   </component>
@@ -165,6 +242,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -288,7 +366,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524898475722</updated>
-      <workItem from="1576310787263" duration="3259000" />
+      <workItem from="1576310787263" duration="3260000" />
     </task>
     <servers />
   </component>
@@ -298,7 +376,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3259000" />
+    <option name="totallyTimeSpent" value="3260000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,7 +389,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="993" y="25" width="927" height="1055" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.1934408" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -324,7 +401,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -408,7 +485,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/allendowney/thinkdast/MyArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5425">
-          <caret line="231" lean-forward="true" selection-start-line="2" selection-end-line="231" />
+          <caret line="231" selection-start-line="2" selection-end-line="231" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -421,14 +498,14 @@
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/allendowney/thinkdast/MyArrayListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3600">
-          <caret line="18" lean-forward="true" selection-end-line="296" />
+        <state relative-caret-position="200">
+          <caret line="176" column="5" lean-forward="true" selection-start-line="176" selection-start-column="5" selection-end-line="176" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
