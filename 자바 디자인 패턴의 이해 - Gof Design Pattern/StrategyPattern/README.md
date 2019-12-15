@@ -45,7 +45,7 @@ interface를 불러와 기능을 수행한다.
 3. (2)를 구현하는 각각의 Strategies
 ```
 
-![](./images/strategy.png)
+![](../images/strategy.png)
 
 - 연습문제
 ```
