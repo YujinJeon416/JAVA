@@ -53,19 +53,33 @@ public class MyArrayList<T> implements List<T> {
 
     @Override
     public void add(int index, T element) {
+
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
-        // add the element to get the resizing
         add(element);
-
-        // shift the elements
-        for (int i = size - 1; i > index; i--) {
-            array[i] = array[i - 1];
+        int copyLength = size-index;
+        if (copyLength > 0) {
+            System.arraycopy(array, index, array, index+1, copyLength);
         }
-        // put the new one in the right place
         array[index] = element;
     }
+
+    //    @Override
+    //    public void add(int index, T element) {
+    //        if (index < 0 || index > size) {
+    //            throw new IndexOutOfBoundsException();
+    //        }
+    //        // add the element to get the resizing
+    //        add(element);
+    //
+    //        // shift the elements
+    //        for (int i = size - 1; i > index; i--) {
+    //            array[i] = array[i - 1];
+    //        }
+    //        // put the new one in the right place
+    //        array[index] = element;
+    //    }
 
     @Override
     public boolean addAll(Collection<? extends T> collection) {
@@ -190,17 +204,21 @@ public class MyArrayList<T> implements List<T> {
     @Override
     public T remove(int index) {
         // TODO: 이 부분을 채우시오
-        if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException();
-        }
+        T removedVar = get(index);
 
-        T removedVar = array[index];
-        int lastIndex = size - (index + 1);
-        if (lastIndex > 0) {
-            System.arraycopy(array, index + 1, array, index, lastIndex);
+        // ver1
+        int copyLength = size - (index + 1);
+        if (copyLength > 0) {
+            System.arraycopy(array, index + 1, array, index, copyLength);
         }
-
         array[--size] = null;
+
+        //        // ver2
+        //        for (int i = index; i < size; i++) {
+        //            array[i] = array[i + 1];
+        //        }
+        //        size--;
+
         return removedVar;
     }
 
@@ -220,10 +238,7 @@ public class MyArrayList<T> implements List<T> {
 
     @Override
     public T set(int index, T element) {
-        if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException();
-        }
-        T prevVar = array[index];
+        T prevVar = get(index);
         array[index] = element;
         return prevVar;
     }
