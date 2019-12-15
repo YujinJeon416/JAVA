@@ -1,4 +1,4 @@
-package com.minkj1992.helper;
+package firstExer.helper;
 
 public class DefaultGameConnectHelper extends AbstGameConnectHelper{
     @Override

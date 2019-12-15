@@ -1,6 +1,9 @@
-import com.minkj1992.helper.*;
+package firstExer;
 
- public class Main {
+import firstExer.helper.AbstGameConnectHelper;
+import firstExer.helper.DefaultGameConnectHelper;
+
+public class Main {
     public static void main(String[] args) {
         AbstGameConnectHelper helper = new DefaultGameConnectHelper();
 
