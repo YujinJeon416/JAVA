@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a7da98-4fc8-43b2-bce3-18ede9002b7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/src/concrete/HpCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/src/concrete/HpPotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/src/concrete/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/src/concrete/MpCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/src/concrete/MpPotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/src/framework/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryMethodPattern/src/framework/ItemCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ThinkDataStructures/실습자료/Exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ThinkDataStructures/실습자료/Exercise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryMethodPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryMethodPattern/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/secondExer/helper/AbstGameConnectHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="420">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -321,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/secondExer/helper/AbstGameConnectHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="420">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
