@@ -9,6 +9,7 @@ public class Computer {
         this.cpu = cpu;
         this.ram = ram;
         this.storage = storage;
+
     }
 
     public String getCpu() {
