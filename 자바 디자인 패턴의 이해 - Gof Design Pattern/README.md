@@ -5,3 +5,9 @@
 - [소스코드](https://github.com/parkgaram/java-designpattern )
 - [소스코드2](https://bitbucket.org/garampark/java-design-pattern)
 
+
+## 학습 일정
+- `./BuilderPattern`
+    - 191218
+    - 191221
+- 
