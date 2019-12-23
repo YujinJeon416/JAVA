@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dd31abd-ea73-467e-a1b1-c57666f4b7c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/after/AfterPrintMorseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/after/DefaultMorseCodeFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/after/KoreanMorseCodeFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/after/MorseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/after/MorseCodeFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/before/BeforePrintMorseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/before/BeforePrintMorseCode2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/before/MorseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/before/MorseCode2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AbstractFactoryPattern_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactoryPattern_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java로 배우는 자료구조/1장.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java로 배우는 자료구조/1장.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ThinkDataStructures/[ch06]Tree.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ThinkDataStructures/[ch06]Tree.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="400">
-                <caret line="16" column="100" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
+              <first_editor relative-caret-position="250">
+                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -188,6 +176,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ThinkDataStructures/실습자료/Exercise" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
@@ -234,16 +223,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577093322757</updated>
-      <workItem from="1577093325356" duration="2864000" />
+      <workItem from="1577093325356" duration="3518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2864000" />
+    <option name="totallyTimeSpent" value="3518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -260,7 +248,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -400,8 +388,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="400">
-            <caret line="16" column="100" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
+          <first_editor relative-caret-position="250">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           </first_editor>
           <second_editor />
         </state>

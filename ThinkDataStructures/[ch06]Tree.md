@@ -35,6 +35,8 @@
     - visited를 check하지 않아도 되는 이유는
         1. Tree이므로 단방향 이동
         2. 부모를 통하지 않고는 다른 분포 Node들은 Mutually Exclusive이다. 다시말해서 2명 이상의 부모를 가지지 않는다.
-2. `recursiveDFS()`
+2. `iterativeDFS()`
+
+
 
 
