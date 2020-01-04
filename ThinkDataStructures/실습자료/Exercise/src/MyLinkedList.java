@@ -77,43 +77,17 @@ public class MyLinkedList<E> implements List<E> {
         return true;
     }
 
+
     @Override
     public void add(int index, E element) {
         //TODO: FILL THIS IN!
-        if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException();
-        }
-
-        Node node = head;
         if (index == 0) {
-            head = new Node(element);
-            head.next = node;
-        } else if (index == size - 1) {
-            int i = 0;
-            for (; node.next != null; node = node.next) {
-                if (i == index - 1) {
-                    Node rightNode = node.next;
-                    node.next = new Node(element);
-                    node.next.next = rightNode;
-                    break;
-                }
-                i++;
-            }
+            head = new Node(element, head);
         } else {
-            int i = 1;
-            for (; node.next != null; node = node.next) {
-                if (i == index - 1) {
-                    Node rightNode = node.next;
-                    node.next = new Node(element);
-                    node.next.next = rightNode;
-                    break;
-                }
-                i++;
-
-            }
+            Node node = getNode(index - 1);
+            node.next = new Node(element, node.next);
         }
         size++;
-
     }
 
     @Override
@@ -247,10 +221,42 @@ public class MyLinkedList<E> implements List<E> {
         return true;
     }
 
+//    @Override
+//    public E remove(int index) {
+//        //TODO: FILL THIS IN!
+//        Node node = null;
+//        if (index == 0) {
+//            node = head;
+//            head = head.next;
+//            return node.data;
+//        } else {
+//            node = getNode(index - 1);
+//            if (node.next != null) {
+//
+//
+//            } else {
+//                throw new IndexOutOfBoundsException();
+//            }
+//        }
+//    }
+
     @Override
     public E remove(int index) {
         //TODO: FILL THIS IN!
-        return null;
+        E element = get(index);
+        if (index == 0) {
+            head = head.next;
+        } else {
+
+            // tail일 경우 node에는 tail -1이 들어간다.
+            // tail-1.next(tail) 이며 tail.next는 null이므로 tail-1.next = null으로 문제 없이 동작한다. 대박..
+
+            Node node = getNode(index - 1);
+            node.next = node.next.next;
+
+        }
+        size--;
+        return element;
     }
 
     @Override

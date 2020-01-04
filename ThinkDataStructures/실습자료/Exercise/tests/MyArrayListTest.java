@@ -210,7 +210,7 @@ public class MyArrayListTest {
         flag = mylist.remove(new Integer(3));
         assertThat(flag, equalTo(true));
         assertThat(mylist.size(), is(0));
-        //System.out.println(Arrays.toString(mal.toArray()));
+//        System.out.println(Arrays.toString(mylist.toArray()));
     }
 
     /**
@@ -218,10 +218,12 @@ public class MyArrayListTest {
      */
     @Test
     public void testRemoveInt() {
-        Integer val = mylist.remove(1);
-        assertThat(val, is(new Integer(2)));
+        System.out.println(Arrays.toString(mylist.toArray()));
+        Integer val = mylist.remove(2);
+        assertThat(val, is(new Integer(3)));
         assertThat(mylist.size(), is(2));
-        assertThat(mylist.get(1), is(new Integer(3)));
+        assertThat(mylist.get(1), is(new Integer(2)));
+        System.out.println(Arrays.toString(mylist.toArray()));
     }
 
     /**
