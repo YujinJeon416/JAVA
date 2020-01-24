@@ -9,6 +9,8 @@
     - left side: 클래스, 인터페이스 생성
     - source code: 생성자, getter,setter 생성가능
 
+- `ctrl + r`: replace All
+- `ctrl + q`: Quick Documentation
 - `ctrl + shift + Enter`: 자동 완성
 - `ctrl + alt + v`: 변수타입, 변수명 생성
 - `ctrl + alt + l`: 자동 정렬
